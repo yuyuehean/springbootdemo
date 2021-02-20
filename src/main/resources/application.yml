@@ -1,0 +1,26 @@
+
+debug: true
+spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/xihuan?useSSL=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: John
+    password: 123456
+      # 用来配置hibernate，第一次可以用create，之后要改为update，可以显示MySQL语句在控制台
+  jpa: 
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    
+      
+   
+      
+     
+ 
+  
