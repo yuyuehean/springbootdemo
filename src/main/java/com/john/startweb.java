@@ -41,7 +41,7 @@ public class startweb{
 		e.setAge("10");
 		e.setAiHao("LOL");
 		e.setName("John");
-		e.setXingQu("LPL");
+		e.setXingQu("LP1");
 		service.save(e);
         return "保存成功";
     }
